@@ -30,14 +30,12 @@ const RootView = Marionette.View.extend({
 
 const App = Marionette.Application.extend({
   region: '#root',
-  
+
   onStart() {
     this.showView(new RootView())
-  }
-})
+  },
+});
 
 const app = new App();
 
-document.addEventListener('DOMContentLoaded', () => {
-  app.start();
-});
+document.addEventListener('DOMContentLoaded', () => app.start());

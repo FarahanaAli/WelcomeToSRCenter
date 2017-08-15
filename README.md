@@ -9,5 +9,5 @@ The concept we chose will inform the people in Roosevelt Island what happens in 
 1. 360 Videos
 1. Trip Information
 1. Photos
-1. Calender
+1. Calendar
 1. Registration

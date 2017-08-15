@@ -1,3 +1,47 @@
+.month {
+padding: 70px 25px;
+width: 100%;
+background: #1abc9c;
+}
+
+/* Month list */
+.month ul {
+margin: 0;
+padding: 0;
+}
+
+.month ul li {
+color: white;
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+float: left;
+padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+float: right;
+padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Weekdays (Mon-Sun) */
 .weekdays {
 margin: 0;
@@ -33,5 +77,5 @@ color:#777;
 .days li .active {
 padding: 5px;
 background: #1abc9c;
-color: white !important
+color: white !important;
 } 
