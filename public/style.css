@@ -49,26 +49,16 @@ left: 10px;
 top: 10px;
 }
 
-.day-text{
+.day-text { 
 }
 
 .day-frame {
-width: 100%;
-height: 100%;
+height: 150px;
 }
 
 .days li{
 position: relative;
 }
-
-
-
-
-
-
-
-
-
 
 /* Weekdays (Mon-Sun) */
 .weekdays {
@@ -91,12 +81,20 @@ background: #eee;
 margin: 0;
 }
 
+.days:after {
+display: block;
+clear: both;
+content: '';
+}
+
 .days li {
 list-style-type: none;
-display: inline-block;
+display: block;
+float: left;
 width: 13.6%;
 text-align: center;
 margin-bottom: 5px;
+position: relative;
 font-size:12px;
 color:#777;
 }
