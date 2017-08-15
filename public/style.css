@@ -1,3 +1,8 @@
+#root {
+margin: auto;
+max-width: 850px;
+}
+
 .month {
 padding: 70px 25px;
 width: 100%;
@@ -28,9 +33,15 @@ padding-top: 10px;
 float: right;
 padding-top: 10px;
 }
-
-
-
+/* number for day */
+.day-number{
+list-style-type: none;
+width: 13.6%;
+text-align: right;
+margin-bottom: 5px;
+font-size:12px;
+color:#777;
+}
 
 
 

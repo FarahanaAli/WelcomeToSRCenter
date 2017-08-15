@@ -1,11 +1,11 @@
 const Marionette = require('backbone.marionette');
-const appTpl = require('./app.html');
-const mainTpl = require('./main.html');
-const navTpl = require('./nav.html');
 
-const events = require('../data/events');
-const menu = require('../data/menu');
+const appTpl = require('./app.html');
 const day = require('./day.html');
+const events = require('../data/events');
+const mainTpl = require('./main.html');
+const menu = require('../data/menu');
+const navTpl = require('./nav.html');
 
 const MainView = Marionette.View.extend({
   template: mainTpl,
@@ -15,6 +15,7 @@ const MainView = Marionette.View.extend({
       let event;
       if (events[index]) event = events[index];
       else event = '';
+
       li.innerHTML = day({
         text: event,
         number: (index > 0 ? index : ''),
