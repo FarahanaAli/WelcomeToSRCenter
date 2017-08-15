@@ -15,4 +15,4 @@ module.exports = [
   'Painting Day',
   'Senior Center Appreciation Day',
 ];
-  
+   

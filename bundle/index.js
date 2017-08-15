@@ -4,17 +4,10 @@ const mainTpl = require('./main.html');
 const navTpl = require('./nav.html');
 
 const events = require('../events');
-console.log(events);
+const menu = require('../menu');
 
 const MainView = Marionette.View.extend({
   template: mainTpl,
-  onRender() {
-    events.forEach((event) => {
-      this.$el[0].appendChild(
-        $(`<div>${event}</div>`)
-      )
-    })
-  }
 })
 
 const NavView = Marionette.View.extend({
