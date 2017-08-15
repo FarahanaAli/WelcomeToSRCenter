@@ -7,7 +7,7 @@ const mainTpl = require('./main.html');
 const menu = require('../data/menu');
 const navTpl = require('./nav.html');
 
-const MainView = Marionette.View.extend({
+const EventsView = Marionette.View.extend({
   template: mainTpl,
   
   onRender() {
@@ -22,13 +22,37 @@ const MainView = Marionette.View.extend({
       });
     })
   }
+});
+
+const FoodMenuView = Marionette.View.extend({
+  template: mainTpl,
+  
+  onRender() {
+    this.$('ul.days li').each((index, li) => {
+      let menuOptions;
+      if (menu[index]) menuOptions = `${menu[index].dinner}`;
+      else menuOptions = '';
+
+      li.innerHTML = day({
+        text: menuOptions,
+        number: (index > 0 ? index : ''),
+      });
+    })
+  }
 })
 
 const NavView = Marionette.View.extend({
   template: navTpl,
+  
 })
 
 const RootView = Marionette.View.extend({
+  events: {
+    'click #food-menu': function() {
+      this.showChildView('main', new FoodMenuView());
+    }
+  },
+
   regions: {
     nav: '#nav',
     main: '#main',
@@ -38,7 +62,7 @@ const RootView = Marionette.View.extend({
   
   onRender() {
     this.showChildView('nav', new NavView());
-    this.showChildView('main', new MainView());
+    this.showChildView('main', new EventsView());
   }
 })
 
