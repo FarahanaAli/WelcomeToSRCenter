@@ -5,9 +5,22 @@ const navTpl = require('./nav.html');
 
 const events = require('../data/events');
 const menu = require('../data/menu');
+const day = require('./day.html');
 
 const MainView = Marionette.View.extend({
   template: mainTpl,
+  
+  onRender() {
+    this.$('ul.days li').each((index, li) => {
+      let event;
+      if (events[index]) event = events[index];
+      else event = '';
+      li.innerHTML = day({
+        text: event,
+        number: (index > 0 ? index : ''),
+      });
+    })
+  }
 })
 
 const NavView = Marionette.View.extend({
