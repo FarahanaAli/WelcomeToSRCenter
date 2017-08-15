@@ -3,8 +3,8 @@ const appTpl = require('./app.html');
 const mainTpl = require('./main.html');
 const navTpl = require('./nav.html');
 
-const events = require('../events');
-// const menu = require('../menu');
+const events = require('../data/events');
+const menu = require('../data/menu');
 
 const MainView = Marionette.View.extend({
   template: mainTpl,

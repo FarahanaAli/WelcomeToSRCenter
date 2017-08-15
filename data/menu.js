@@ -11,28 +11,28 @@ module.exports = [
     lunch: 'mashed potatoes',
     dinner: 'spagetti',
   },
-  { lunch: 'tacos',
+  {
+    lunch: 'tacos',
     dinner: 'chicken fajitas',
   },
   {
-  lunch:'burger',
-  dineer: 'braised ribs',
+    lunch:'burger',
+    dinner: 'braised ribs',
   },
   {
-  lunch: 'sausage',
-  dinner: 'sushi',
+    lunch: 'sausage',
+    dinner: 'sushi',
   },
   {
-  lunch: 'salisbury steak'
-  dinner: 'salmon'
+    lunch: 'salisbury steak',
+    dinner: 'salmon',
   },
   {
-  lunch: 'rice over fish'
-  dinner: 'pasta'
+    lunch: 'rice over fish',
+    dinner: 'pasta',
   },
   {
-  lunch: 'sandwich'
-  dinner: 'meatloaf'
-
-  
+    lunch: 'sandwich',
+    dinner: 'meatloaf',
+  },
 ];
