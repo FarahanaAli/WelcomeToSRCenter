@@ -1,6 +1,5 @@
 #root {
 margin: auto;
-max-width: 850px;
 }
 
 .month {
@@ -51,15 +50,16 @@ top: 10px;
 }
 
 .day-text{
-
 }
 
-.day-frame{
-height: 150px;
+.day-frame {
+width: 100%;
+height: 100%;
+}
+
+.days li{
 position: relative;
-width: 150px;
 }
-
 
 
 
