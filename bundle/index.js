@@ -1,5 +1,5 @@
 const Marionette = require('backbone.marionette');
-const appTpl = require('./app.hbs');
+const appTpl = require('./app.html');
 
 console.log(appTpl);
 
