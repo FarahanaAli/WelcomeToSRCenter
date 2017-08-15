@@ -7,12 +7,14 @@ max-width: 850px;
 padding: 70px 25px;
 width: 100%;
 background: #1abc9c;
+text-align:center;
 }
 
 /* Month list */
 .month ul {
 margin: 0;
 padding: 0;
+list-style-type: none;
 }
 
 .month ul li {
@@ -34,13 +36,18 @@ float: right;
 padding-top: 10px;
 }
 /* number for day */
-.day-number{
+.day-number {
 list-style-type: none;
 width: 13.6%;
 text-align: right;
 margin-bottom: 5px;
 font-size:12px;
 color:#777;
+}
+
+.day-frame{
+width: 150px;
+height: 150px;
 }
 
 
