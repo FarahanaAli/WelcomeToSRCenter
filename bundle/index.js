@@ -3,15 +3,25 @@ const appTpl = require('./app.html');
 const mainTpl = require('./main.html');
 const navTpl = require('./nav.html');
 
+const events = require('../events');
+console.log(events);
+
 const MainView = Marionette.View.extend({
   template: mainTpl,
+  onRender() {
+    events.forEach((event) => {
+      this.$el[0].appendChild(
+        $(`<div>${event}</div>`)
+      )
+    })
+  }
 })
 
 const NavView = Marionette.View.extend({
   template: navTpl,
 })
 
-const RootView = Marionette.LayoutView.extend({
+const RootView = Marionette.View.extend({
   regions: {
     nav: '#nav',
     main: '#main',
@@ -19,9 +29,9 @@ const RootView = Marionette.LayoutView.extend({
   
   template: appTpl,
   
-  onShow() {
-    this.nav.show(new NavView());
-    this.main.show(new MainView());
+  onRender() {
+    this.showChildView('nav', new NavView());
+    this.showChildView('main', new MainView());
   }
 })
 
