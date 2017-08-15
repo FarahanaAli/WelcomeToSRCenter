@@ -1,1 +1,1 @@
-const component = require('./component');
+const Marionette = require('backbone.marionette')
