@@ -1,13 +1,27 @@
 const Marionette = require('backbone.marionette');
 const appTpl = require('./app.html');
+const mainTpl = require('./main.html');
+const navTpl = require('./nav.html');
 
-console.log(appTpl);
+const MainView = Marionette.View.extend({
+  template: mainTpl,
+})
 
-const RootView = Marionette.View.extend({
+const NavView = Marionette.View.extend({
+  template: navTpl,
+})
+
+const RootView = Marionette.LayoutView.extend({
+  regions: {
+    nav: '#nav',
+    main: '#main',
+  },
+  
   template: appTpl,
   
   onShow() {
-    this.$el.innerHTML = 'yo';
+    this.nav.show(new NavView());
+    this.main.show(new MainView());
   }
 })
 
@@ -22,6 +36,5 @@ const App = Marionette.Application.extend({
 const app = new App();
 
 document.addEventListener('DOMContentLoaded', () => {
-  
   app.start();
-})
+});
