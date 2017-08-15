@@ -2,6 +2,7 @@
 // where your node app starts
 
 // init project
+var browserify = require('browserify-middleware');
 var express = require('express');
 var app = express();
 
@@ -10,6 +11,9 @@ var app = express();
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
+
+//provide browserified versions of all the files in a directory 
+app.use('/js', browserify(__dirname + '/bundle'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
