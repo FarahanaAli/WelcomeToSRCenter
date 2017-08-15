@@ -4,7 +4,7 @@ const mainTpl = require('./main.html');
 const navTpl = require('./nav.html');
 
 const events = require('../events');
-const menu = require('../menu');
+// const menu = require('../menu');
 
 const MainView = Marionette.View.extend({
   template: mainTpl,
