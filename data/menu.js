@@ -1,7 +1,7 @@
 module.exports = [
   {
-    lunch: 'Sandwiches',
-    dinner: 'Pot roast',
+    lunch: 'L: Sandwiches',
+    dinner: 'DPot roast',
   },
   {
     lunch: 'Pizza',
@@ -35,4 +35,11 @@ module.exports = [
     lunch: 'Sandwich',
     dinner: 'Meatloaf',
   },
+  {
+    lunch: 'Burgers',
+    dinner: 'Mac and Cheese',
+  },
+  {
+    lunch: ''
+  }
 ];
