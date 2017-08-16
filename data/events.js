@@ -20,6 +20,7 @@ module.exports = [
   },
   {
     name: 'Story Day',
+    image:'http://www.sthelenahospice.org.uk/images/blog/Mens%20cancer%20group%20WEB.jpg?height=310&width=710&mode=crop',
   },
   {
     name: 'Dance Day',
@@ -39,7 +40,8 @@ module.exports = [
     name: 'Mingle Day',
   },
   {
-    name: 'Computers Day'
+    name: 'Computers Day',
+    image:'http://images.crestock.com/4030000-4039999/4038576-xs.jpg',
   },
   {
     name: 'Craft Day',
@@ -54,10 +56,12 @@ module.exports = [
   },
   {
     name: 'Field Trip Day',
+    image: 'http://www.coachtour.com/wp-content/uploads/2015/08/seniors-on-a-field-trip-e1439223164322.jpg',
   },
   
   {
     name: 'Puzzle Day',
+    image:'http://previews.123rf.com/images/witthaya/witthaya1612/witthaya161200044/67616235-Asian-couple-senior-playing-with-a-jigsaw-puzzle-at-home-Stock-Photo.jpg',
   },
   {
     name: 'Instrument Day',
@@ -71,6 +75,7 @@ module.exports = [
   },
   {
     name: 'Flags Making Day ',
+    image: 'http://farm8.staticflickr.com/7218/7394811846_a5fba5b8b7.jpg',
   },
   {
     name: 'Mental Health Day',
@@ -84,6 +89,7 @@ module.exports = [
   },  
   {
     name: 'Chess Club' ,
+    image: 'http://minsportzk.ru/files/anons/5901685b361ba.jpg',
   },
   {
     name: 'Senior Center Appreciation Day',
@@ -94,9 +100,29 @@ module.exports = [
   },
   { 
     name: 'Kids Day',
-    video: 'https://mail.google.com/mail/u/0/#inbox/15de6a8384b2cc91?projector=1',
-   
+    video: 'https://mail.google.com/mail/u/0/#inbox/15de6a8384b2cc91?projector=1', 
   },
-  
-  
+  {
+    name: 'Reading Day',
+    
+  },
+  {
+    name: 'Culture Dress Up Day',
+   },
+  {
+    name: 'Bring a Buddy Day',
+  },
+  {
+    name: 'Garden Day',
+  },
+  {
+    name: 'Health Day', 
+  },
+  {
+    name: 'Spirit Day',
+  },
+  {
+    name: 'Lets Get Active Day',
+  },
+    
 ];

@@ -8,7 +8,7 @@ const carouselTpl = require('./carousel.html');
 const day = require('./day.html');
 const events = require('../data/events');
 const mainTpl = require('./main.html');
-const menu = [];
+const menu = require('../data/menu');
 const navTpl = require('./nav.html');
 const urls = require('../data/urls');
 const videoTpl = require('./video.html');
@@ -78,7 +78,7 @@ const FoodMenuView = Marionette.View.extend({
     this.$('ul.days li').each((index, li) => {
       let menuOptions;
       if (menu[index]) menuOptions = [`L: ${menu[index].lunch}`, `D: ${menu[index].dinner}`];
-      else menuOptions = '';
+      else menuOptions = [''];
       
       let number = index;
       if (number === 0) number = 31;
