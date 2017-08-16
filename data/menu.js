@@ -74,6 +74,26 @@ module.exports = [
     dinner: 'Chicken stew',
   },
   {
-    breakfast: ''
+    breakfast: 'Mangu and salami',
+    lunch: 'Sandwichies',
+    dinner: 'Beef stew',
+  },
+  {
+    breakfast: ' Yogurt',
+    lunch: 'Pizza',
+    dinner: 'Pot Roast'
+  },
+  {
+    breakfast: 'Pancakes',
+    lunch: 'Sandwiches',
+    dinner: 'Meatloaf',
+  },
+  {
+    breakfast: 'Jam and toast',
+    lunch:'Tacos',
+    dinner: 'Pasta',
+  },
+  {
+    breakfast: 'waffles'
   }
 ];

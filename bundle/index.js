@@ -1,5 +1,6 @@
+require('slick-carousel');
+
 const Marionette = require('backbone.marionette');
-const $ = require('jquery');
 
 const appTpl = require('./app.html');
 const carouselTpl = require('./carousel.html');
@@ -10,7 +11,6 @@ const menu = require('../data/menu');
 const navTpl = require('./nav.html');
 const urls = require('../data/urls');
 
-window.$ = $;
 const { imageUrls } = urls;
 
 const CarouselView = Marionette.View.extend({
@@ -20,7 +20,7 @@ const CarouselView = Marionette.View.extend({
     carousel: '.carousel',
   },
   
-  onShow() {
+  onAttach() {
     console.log(this.ui.carousel);
     this.ui.carousel.slick();
   }

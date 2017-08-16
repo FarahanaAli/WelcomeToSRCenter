@@ -17,7 +17,8 @@
     "underscore": "^1.8.3",
     "jquery": "^3.2.1",
     "hbsfy": "^2.7.0",
-    "handlebars": "^4.0.10"
+    "handlebars": "^4.0.10",
+    "slick-carousel": "^1.7.1"
   },
   "engines": {
     "node": "8.x"
