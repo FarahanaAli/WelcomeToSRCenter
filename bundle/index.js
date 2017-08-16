@@ -1,11 +1,24 @@
 const Marionette = require('backbone.marionette');
 
 const appTpl = require('./app.html');
+const carouselTpl = require('./carousel.html');
 const day = require('./day.html');
 const events = require('../data/events');
 const mainTpl = require('./main.html');
 const menu = require('../data/menu');
 const navTpl = require('./nav.html');
+
+const CarouselView = Marionette.View.extend({
+  template: carouselTpl,
+  
+  ui: {
+    carousel: '.carousel',
+  },
+  
+  onRender() {
+    this.ui.carousel.slick();
+  }
+});
 
 const EventsView = Marionette.View.extend({
   template: mainTpl,

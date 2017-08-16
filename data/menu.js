@@ -30,7 +30,7 @@ module.exports = [
     dinner: 'Sushi',
   },
   {
-    breakfast: 'Bagels'
+    breakfast: 'Bagels',
     lunch: 'Salisbury steak',
     dinner: 'Salmon',
   },
@@ -59,6 +59,16 @@ module.exports = [
     dinner: 'Mash Potatos and tofu', 
   },
   {
-    breakfast:
-    lunch:'bak'
+    breakfast:'Eggs',
+    lunch:'Baked Potato',
+    dinner:'Chicken Fajitas',
+  },
+  { 
+    breakfast: 'Oatmeal',
+    lunch: 'tofu',
+    dinner: 'Steak and yellow rice',
+  },
+  {
+    breakfast:'Peanut Butter Sandwich',
+  }
 ];
