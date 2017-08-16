@@ -1,14 +1,13 @@
 .topbar{
 background-color: #1abc9c;
 font-family: tahoma, sans-serif;
-font-size: 48pt;
+font-size: 50px;
 color: white;
 text-align: center;
 width: 100%;
 height: 130px;
 float: center;
 padding: .2em;
-text-shadow: -4px 4px 6px red;
 }
 
 
@@ -48,7 +47,10 @@ align-items: center;
 .open-video-stream {
 color: black;
 cursor: pointer;
+border: 1px solid rgba(0,0,0,0.8);
 font-weight: 700;
+padding: 2px 5px;
+border-radius: 2px;
 }
 
 .open-video-stream.live {
@@ -82,7 +84,7 @@ list-style-type: none;
 }
 .month ul li {
 color: white;
-font-size: 20px;
+font-size: 32px;
 text-transform: uppercase;
 letter-spacing: 3px;
 }
@@ -120,6 +122,7 @@ left: 50%;
 transform: translateX(-50%) translateY(-50%);
 width: calc(100% - 10px);
 color: rgba(0,0,0,0.8);
+font-size: 15px;
 }
 
 nav {

@@ -49,7 +49,7 @@ const EventsView = Marionette.View.extend({
         event = [events[index].name];
         if (events[index].video) {
           event.push(
-            `<a data-video="${events[index].video}" class="open-video-stream ${index === 17 ? 'live' : ''}">• ${index === 17 ? 'Watch live' : 'Watch'}</a>`
+            `<a data-video="${events[index].video}" class="open-video-stream ${index === 17 ? 'live' : ''}">${index === 17 ? 'Watch live' : 'Watch'}</a>`
           );
         }
         if (events[index].image) {
