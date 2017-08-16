@@ -17,15 +17,22 @@ const CarouselView = Marionette.View.extend({
   template: () => carouselTpl({ images: imageUrls }),
   
   ui: {
-    carousel: '.carousel',
+    firstCarousel: '.carousel-1',
+    secondCarousel: '.carousel-2',
   },
   
   onAttach() {
-    this.ui.carousel.slick({
+    this.ui.firstCarousel.slick({
       autoplay: true,
       centerMode: true,
       variableWidth: true,
     });
+    this.ui.secondCarousel.slick({
+      autoplay: true,
+      centerMode: true,
+      variableWidth: true,
+      rtl: true,
+    })
   }
 });
 

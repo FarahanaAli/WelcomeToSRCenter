@@ -100,9 +100,11 @@ module.exports = [
   },
   {
     breakfast:'Ceral',
-    lunch: ''
+    lunch: 'Tofu and Shrimp',
+    dinner: 'Ceaser Salad',
   },
   {
-    
+    breakfast:'Smoothie'
+    lunch:''
   }
 ];
