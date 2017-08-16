@@ -1,6 +1,7 @@
 module.exports = [
   {
-    name: 'Sp'
+    name: 'Spa Day',
+    video: true,
   },
   {
     name: 'Gardening day',
@@ -10,6 +11,7 @@ module.exports = [
   },
   {
     name: 'Mingle Day',
+    video: true,
   },
   {
     name: 'Mental Health Day',
@@ -26,6 +28,7 @@ module.exports = [
   },
   {
     name: 'Yoga Class',
+    video: true,
   },
   {
     name: 'Cool fun day',
@@ -34,13 +37,14 @@ module.exports = [
     name: 'Mingle Day',
   },
   {
-    name: 'Craft Day'
+    name: 'Computers Day'
   },
   {
     name: 'Craft Day',
   },
   {
     name: 'Field Trip Day',
+    video: true,
   },
   {
     name: 'Kids Craft Day',
@@ -73,6 +77,7 @@ module.exports = [
   },
   {
     name: 'Painting Day',
+    video: true,
   },  
   {
     name: 'Chess Club' ,
@@ -80,4 +85,14 @@ module.exports = [
   {
     name: 'Senior Center Appreciation Day',
   },
+  {
+    name: 'Pajama Day',
+    video: true,
+  },
+  { 
+    name: 'Garden Day',
+   
+  },
+  
+  
 ];

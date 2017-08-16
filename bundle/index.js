@@ -55,12 +55,12 @@ const EventsView = Marionette.View.extend({
       }
       
       let number = index;
-      if (number < 0) number = '';
-      if (number > 31) number = 31 % number;
+      if (number === 0) number = 31;
+      if (number > 31) number = number % 31;
 
       li.innerHTML = day({
         text: event,
-        number: (index > 0 ? index : ''),
+        number,
       });
     })
   }
@@ -74,10 +74,14 @@ const FoodMenuView = Marionette.View.extend({
       let menuOptions;
       if (menu[index]) menuOptions = [`L: ${menu[index].lunch}`, `D: ${menu[index].dinner}`];
       else menuOptions = '';
+      
+      let number = index;
+      if (number === 0) number = 31;
+      if (number > 31) number = number % 31;
 
       li.innerHTML = day({
         text: menuOptions,
-        number: (index > 0 ? index : ''),
+        number,
       });
     })
   }
