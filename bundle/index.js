@@ -49,10 +49,14 @@ const EventsView = Marionette.View.extend({
         event = [events[index].name];
         if (events[index].video) {
           event.push(
-            `<a data-video="${events[index].video}" class="open-video-stream">• Watch</a>`
+            `<a data-video="${events[index].video}" class="open-video-stream ${index === 17 ? 'live' : ''}">• ${index === 17 ? 'Watch live' : 'Watch'}</a>`
           );
         }
       }
+      
+      let number = index;
+      if (number < 0) number = '';
+      if (number > 31) number = 31 % number;
 
       li.innerHTML = day({
         text: event,

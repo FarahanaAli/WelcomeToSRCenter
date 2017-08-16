@@ -20,7 +20,7 @@ position: absolute;
 top: 25px;
 left: 25px;
 font-weight: 700;
-cursor: hover;
+cursor: pointer;
 }
 
 .video-container {
@@ -35,6 +35,17 @@ align-items: center;
 color: black;
 cursor: pointer;
 font-weight: 700;
+}
+
+.open-video-stream.live {
+color: red;
+}
+
+.open-video-stream:hover{
+color: black;
+cursor: pointer;
+font-weight: 700;
+text-decoration: underline;
 }
 
 #root {
@@ -103,16 +114,16 @@ height: 150px;
 
 .days li{
 position: relative;
-border: 1px solid #fff;
+border: 1px solid rgba(0,0,0,0.5);
 border-right: 0;
 }
 
 .days li:first-child {
-border-left: 1px solid #fff;  
+border-left: 1px solid rgba(0,0,0,0.5);  
 }
 
 .days li:nth-child(7n) {
-border-right: 1px solid #fff;
+border-right: 1px solid rgba(0,0,0,0.5);
 }
 
 /* Weekdays (Mon-Sun) */
@@ -131,9 +142,8 @@ text-align: center;
 
 /* Days (1-31) */
 .days {
-padding: 10px 0;
+padding: 10px 5px;
 background: #eee;
-margin: auto;
 }
 
 
