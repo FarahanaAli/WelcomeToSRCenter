@@ -14,6 +14,7 @@ app.use(express.static('public'));
 
 //provide browserified versions of all the files in a directory 
 browserify.settings.development('gzip', true);
+browserify.settings.development('cache', false);
 app.use('/js', browserify(__dirname + '/bundle'));
 
 // http://expressjs.com/en/starter/basic-routing.html

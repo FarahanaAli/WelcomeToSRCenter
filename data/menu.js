@@ -104,7 +104,14 @@ module.exports = [
     dinner: 'Ceaser Salad',
   },
   {
-    breakfast:'Smoothie'
-    lunch:''
+    breakfast:'Smoothie',
+    lunch: 'Meatballs',
+    dinner:'Lamb and Beef with Rice',
+  },
+  {
+   breakfast:'China'    
+  },
+  {
+    breakfast: '',
   }
 ];
