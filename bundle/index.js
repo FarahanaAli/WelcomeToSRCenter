@@ -1,4 +1,5 @@
 const Marionette = require('backbone.marionette');
+const $ = require('jquery');
 
 const appTpl = require('./app.html');
 const carouselTpl = require('./carousel.html');
@@ -7,15 +8,20 @@ const events = require('../data/events');
 const mainTpl = require('./main.html');
 const menu = require('../data/menu');
 const navTpl = require('./nav.html');
+const urls = require('../data/urls');
+
+window.$ = $;
+const { imageUrls } = urls;
 
 const CarouselView = Marionette.View.extend({
-  template: carouselTpl,
+  template: carouselTpl({ images: imageUrls }),
   
   ui: {
     carousel: '.carousel',
   },
   
   onRender() {
+    console.log(this.ui.carousel);
     this.ui.carousel.slick();
   }
 });
@@ -75,7 +81,7 @@ const RootView = Marionette.View.extend({
   
   onRender() {
     this.showChildView('nav', new NavView());
-    this.showChildView('main', new EventsView());
+    this.showChildView('main', new CarouselView());
   }
 })
 
