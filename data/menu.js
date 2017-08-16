@@ -1,38 +1,38 @@
 module.exports = [
   {
-    lunch: 'sandwiches',
-    dinner: 'pot roast',
+    lunch: 'Sandwiches',
+    dinner: 'Pot roast',
   },
   {
-    lunch: 'pizza',
-    dinner: 'chicken and rice',
+    lunch: 'Pizza',
+    dinner: 'Chicken and rice',
   },
   {
-    lunch: 'mashed potatoes',
-    dinner: 'spagetti',
+    lunch: 'Mashed potatoes',
+    dinner: 'Spagetti',
   },
   {
-    lunch: 'tacos',
-    dinner: 'chicken fajitas',
+    lunch: 'Tacos',
+    dinner: 'Chicken fajitas',
   },
   {
-    lunch:'burger',
-    dinner: 'braised ribs',
+    lunch:'Burger',
+    dinner: 'Braised ribs',
   },
   {
-    lunch: 'sausage',
-    dinner: 'sushi',
+    lunch: 'Sausage',
+    dinner: 'Sushi',
   },
   {
-    lunch: 'salisbury steak',
-    dinner: 'salmon',
+    lunch: 'Salisbury steak',
+    dinner: 'Salmon',
   },
   {
-    lunch: 'rice over fish',
-    dinner: 'pasta',
+    lunch: 'Rice Over fish',
+    dinner: 'Pasta',
   },
   {
-    lunch: 'sandwich',
-    dinner: 'meatloaf',
+    lunch: 'Sandwich',
+    dinner: 'Meatloaf',
   },
 ];
