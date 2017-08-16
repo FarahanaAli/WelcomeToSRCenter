@@ -7,9 +7,10 @@ const carouselTpl = require('./carousel.html');
 const day = require('./day.html');
 const events = require('../data/events');
 const mainTpl = require('./main.html');
-const menu = []
+const menu = [];
 const navTpl = require('./nav.html');
 const urls = require('../data/urls');
+const videoTpl = require('./video.html');
 
 const { imageUrls } = urls;
 
@@ -72,14 +73,23 @@ const FoodMenuView = Marionette.View.extend({
 
 const NavView = Marionette.View.extend({
   template: navTpl,
-  
+})
+
+const VideoView = Marionette.View.extend({
+  template: videoTpl,
 })
 
 const RootView = Marionette.View.extend({
   events: {
     'click #food-menu': function() {
       this.showChildView('main', new FoodMenuView());
-    }
+    },
+    'click #calendar': function() {
+      this.showChildView('main', new EventsView())
+    },
+    'click .open-video-stream': function() {
+      this.showChildView('main', new VideoView());
+    },
   },
 
   regions: {

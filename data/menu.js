@@ -114,8 +114,23 @@ module.exports = [
    dinner:'English Muffin Pizza',
   },
   {
-    breakfast:'yougurt and ceral',
+    breakfast:'Yougurt and Ceral',
     lunch:'Pizza',
-    dinner:''
+    dinner:'Chicken Stroganoff with Rice'
+  },
+  {
+    breakfast:'coffee and Muffin',
+    lunch:'BBQ ribs with Salad',
+    dinner:'Soup'
+  },
+  {
+   breakfast:'Eggs with toast and flowered tea',
+    lunch:'Mashed poto'
+    
+  },
+  {
+    breakfast: 'Eggs and Pancakes',
+    lunch: ''
+  }
     
 ];
