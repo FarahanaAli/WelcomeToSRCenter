@@ -1,5 +1,6 @@
 require('slick-carousel');
 
+const Backbone = require('backbone');
 const Marionette = require('backbone.marionette');
 
 const appTpl = require('./app.html');
@@ -44,13 +45,11 @@ const EventsView = Marionette.View.extend({
     this.$('ul.days li').each((index, li) => {
       let event;
       
-      if (events[index].name) {
+      if (events[index]) {
         event = [events[index].name];
         if (events[index].video) {
-          event.shift(`<button class="open-video-stream">Video</button>`)  
+          event.unshift(`<button data-video="${events[index].video}" class="open-video-stream">Video</button>`)  
         }
-      } else {
-        event = [];
       }
 
       li.innerHTML = day({
@@ -83,6 +82,12 @@ const NavView = Marionette.View.extend({
 })
 
 const VideoView = Marionette.View.extend({
+  initialize(videoUrl) {
+    console.log(videoUrl);
+    this.model = new Backbone.Model({
+      videoUrl,
+    });
+  },
   template: videoTpl,
 })
 
@@ -94,9 +99,8 @@ const RootView = Marionette.View.extend({
     'click #calendar': function() {
       this.showChildView('main', new EventsView())
     },
-    'click .open-video-stream': function($el) {
-      console.log($el);
-      this.showChildView('main', new VideoView());
+    'click .open-video-stream': function($event) {
+      this.showChildView('main', new VideoView($event.currentTarget.getAttribute('data-video')));
     },
   },
 
