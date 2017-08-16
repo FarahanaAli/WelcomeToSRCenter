@@ -14,13 +14,13 @@ window.$ = $;
 const { imageUrls } = urls;
 
 const CarouselView = Marionette.View.extend({
-  template: carouselTpl({ images: imageUrls }),
+  template: () => carouselTpl({ images: imageUrls }),
   
   ui: {
     carousel: '.carousel',
   },
   
-  onRender() {
+  onShow() {
     console.log(this.ui.carousel);
     this.ui.carousel.slick();
   }

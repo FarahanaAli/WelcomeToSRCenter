@@ -70,6 +70,10 @@ module.exports = [
   },
   {
     breakfast:'Peanut Butter Sandwich',
-
+    lunch: 'Penn',
+    dinner: 'Chicken stew',
+  },
+  {
+    breakfast: ''
   }
 ];

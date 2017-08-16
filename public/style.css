@@ -1,5 +1,5 @@
 
-/* close overlay*/
+/* bye bye overlay*/
 .overlay .closebtn {
     position: absolute;
     top: 20px;
@@ -8,7 +8,7 @@
 }
 
 
-/*position content*/
+/*position content of da overlay*/
 .overlay-content {
     position: relative;
     top: 25%; 
@@ -32,7 +32,7 @@ overflow-x: hidden;
 transition: 0.5s; 
 }
 
-/* hovering */
+/* when da overlay hovers */
 .overlay a:hover, .overlay a:focus {
     color:#00FF00;
 }
@@ -161,3 +161,8 @@ padding: 5px;
 background: #1abc9c;
 color: white !important;
 } 
+
+img {
+max-height: 250px;
+max-width: 100%;
+}
