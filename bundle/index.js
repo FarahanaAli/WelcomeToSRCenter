@@ -48,7 +48,9 @@ const EventsView = Marionette.View.extend({
       if (events[index]) {
         event = [events[index].name];
         if (events[index].video) {
-          event.unshift(`<button data-video="${events[index].video}" class="open-video-stream">Video</button>`)  
+          event.push(
+            `<a data-video="${events[index].video}" class="open-video-stream">• Watch</a>`
+          );
         }
       }
 
@@ -99,6 +101,9 @@ const RootView = Marionette.View.extend({
         videoUrl,
       })
       this.showChildView('main', new VideoView({ model }));
+    },
+    'click .video-close': function() {
+      this.showChildView('main', new EventsView());
     },
   },
 

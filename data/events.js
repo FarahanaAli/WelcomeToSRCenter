@@ -36,12 +36,13 @@ module.exports = [
   },
   {},
   {},
+  
+  {
+    name: 'Puzzle Day',
+  },
   {
     name: 'Instrument Day',
     video: 'https://www.youtube.com/embed/MjqdNAFUECg',
-  },
-  {
-    name: 'Puzzle Day',
   },
   {
     name: 'Cuture Day',
