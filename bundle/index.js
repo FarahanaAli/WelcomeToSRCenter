@@ -82,11 +82,8 @@ const NavView = Marionette.View.extend({
 })
 
 const VideoView = Marionette.View.extend({
-  initialize(videoUrl) {
-    console.log(videoUrl);
-    this.model = new Backbone.Model({
-      videoUrl,
-    });
+  initialize({ model }) {
+    console.log(model.toJSON());
   },
   template: videoTpl,
 })
@@ -100,7 +97,11 @@ const RootView = Marionette.View.extend({
       this.showChildView('main', new EventsView())
     },
     'click .open-video-stream': function($event) {
-      this.showChildView('main', new VideoView($event.currentTarget.getAttribute('data-video')));
+      const videoUrl = $event.currentTarget.getAttribute('data-video');
+      const model = new Backbone.Model({
+        videoUrl,
+      })
+      this.showChildView('main', new VideoView({ model }));
     },
   },
 
