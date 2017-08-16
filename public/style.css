@@ -21,6 +21,7 @@ body {
 background: #ccc !important;
 }
 .video-overlay {
+background: rgba(50,50,50,1);
 position: fixed;
 left: 0;
 right: 0;
@@ -30,10 +31,15 @@ top: 0;
 
 .video-close{
 position: absolute;
-top: 25px;
-left: 25px;
+top: -25px;
+left: -25px;
 font-weight: 700;
 cursor: pointer;
+color: white;
+}
+
+.video-frame {
+position: relative;
 }
 
 .video-container {
