@@ -150,6 +150,7 @@ module.exports = [
   },
   {
     breakfast: 'Sandwich',
-    lunch: ''
-  }
+    lunch: 'Tacos',
+    dinner:'Gyros',
+  },
 ];

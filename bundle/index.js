@@ -43,8 +43,15 @@ const EventsView = Marionette.View.extend({
   onRender() {
     this.$('ul.days li').each((index, li) => {
       let event;
-      if (events[index]) event = [events[index]];
-      else event = '';
+      
+      if (events[index].name) {
+        event = [events[index].name];
+        if (events[index].video) {
+          event.shift(`<button class="open-video-stream">Video</button>`)  
+        }
+      } else {
+        event = [];
+      }
 
       li.innerHTML = day({
         text: event,
@@ -117,13 +124,3 @@ const App = Marionette.Application.extend({
 const app = new App();
 
 document.addEventListener('DOMContentLoaded', () => app.start());
-
-
-
-
-
-
-
-
-
-

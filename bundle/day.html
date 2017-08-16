@@ -1,15 +1,10 @@
 <div class="day-frame">
   <span class="day-text">
     {{#each text}}
-      {{this}}<br/>
+      {{{this}}}<br/>
     {{/each}}
   </span>
   <span class="day-number">
     {{number}}
   </span>
-  {{#if showVideoButton}}
-    <button class="open-video-stream" data-video-name="{{videoName}}">
-      Video
-    </button>
-  {{/if}}
 </div>
