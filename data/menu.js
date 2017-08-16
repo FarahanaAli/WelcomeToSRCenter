@@ -124,13 +124,32 @@ module.exports = [
     dinner:'Soup'
   },
   {
-   breakfast:'Eggs with toast and flowered tea',
-    lunch:'Mashed poto'
-    
+   breakfast:'Eggs with Toast and Flowered Tea',
+    lunch:'Mashed Pototoes with Chicken',
+    dinner:'Macroni with Meat',
   },
   {
     breakfast: 'Eggs and Pancakes',
+    lunch: 'Chicken Nuggets',
+    dinner:'Cheeseburger soup'
+  },
+  {
+    breakfast:'Fresh fruit',
+    lunch: 'Pasta',
+    dinner: 'Mac and Cheese',
+  },
+  {
+    breakfast:'Bagel and Cream Cheese',
+    lunch: 'Pizza',
+    dinner: 'Pot Roast',
+  },
+  {
+    breakfast:'Muffin',
+    lunch: 'Burgers',
+    dinner: 'Rice and beans',
+  },
+  {
+    breakfast: 'Sandwich',
     lunch: ''
   }
-    
 ];

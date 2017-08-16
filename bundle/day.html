@@ -7,4 +7,9 @@
   <span class="day-number">
     {{number}}
   </span>
+  {{#if showVideoButton}}
+    <button class="open-video-stream" data-video-name="{{videoName}}">
+      Video
+    </button>
+  {{/if}}
 </div>

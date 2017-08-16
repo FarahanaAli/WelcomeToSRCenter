@@ -1,13 +1,26 @@
 module.exports = [
-  '',
-  'Gardening day',
-  'Chess Club',
-  '',
-  'Mental Health Day',
-  'Story Day',
-  '',
-  'Spa Day',
-  'Yoga Class',
+  {},
+  {
+    name: 'Gardening day',
+  },
+  {
+    name: 'Chess Club',
+  },
+  {},
+  {
+    name: 'Mental Health Day',
+  },
+  {
+    name: 'Story Day',
+  },
+  {
+   name: 'Dance Day',
+  },
+  {
+    name: 'Spa Day',  
+  }
+  {}
+  name: 'Yoga Class',
   '',
   'Mingle Day',
   '',
@@ -15,7 +28,7 @@ module.exports = [
   'Field Trip Day',
   '',
   '',
-  '',
+  'Instrument Day',
   'Puzzle Day',
   'Cuture Day',
   'Flags Day',

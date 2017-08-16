@@ -87,7 +87,8 @@ const RootView = Marionette.View.extend({
     'click #calendar': function() {
       this.showChildView('main', new EventsView())
     },
-    'click .open-video-stream': function() {
+    'click .open-video-stream': function($el) {
+      console.log($el);
       this.showChildView('main', new VideoView());
     },
   },
