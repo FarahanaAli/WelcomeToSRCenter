@@ -130,7 +130,6 @@ width: 900px;
 margin: auto;
 background: #fff;
 border-radius: 0 0 4px 4px;
-border: 1px solid rgba(0,0,0,0.8);
 }
 
 nav:after {
@@ -276,7 +275,7 @@ color: white !important;
 } 
 
 img {
-max-height: 215px;
+max-height: 300px;
 max-width: 100%;
 }
 
@@ -293,14 +292,14 @@ bottom: 0;
 right: 0;
 left: 0;
 }
-.carousel-frame {
-background: rgba(0,0,0,0.8);
-border-radius: 4px;
-}
 
-.carousels {
-/* (1040 - 450) / 2 */
-padding: 295px 0;
+.carousel-frame {
+background: rgba(0,0,200,0.4);
+border-radius: 8px;
+width: 800px;
+margin: auto;
+margin-top: 295px;
+padding: 15px 40px;
 }
 
 .event-image{
