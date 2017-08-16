@@ -82,9 +82,6 @@ const NavView = Marionette.View.extend({
 })
 
 const VideoView = Marionette.View.extend({
-  initialize({ model }) {
-    console.log(model.toJSON());
-  },
   template: videoTpl,
 })
 
