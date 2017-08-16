@@ -285,6 +285,19 @@ max-width: 850px;
 margin: auto;
 }
 
+.carousel-container {
+background: white;  
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+.carousel-frame {
+background: rgba(0,0,0,0.8);
+border-radius: 4px;
+}
+
 .carousels {
 /* (1040 - 450) / 2 */
 padding: 295px 0;

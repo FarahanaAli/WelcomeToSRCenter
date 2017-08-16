@@ -18,9 +18,10 @@ const { imageUrls } = urls;
 const CarouselView = Marionette.View.extend({
   template: () => carouselTpl({ images: imageUrls }),
   
+  className: 'carousel-container',
+  
   ui: {
     firstCarousel: '.carousel-1',
-    secondCarousel: '.carousel-2',
   },
   
   onAttach() {
@@ -29,12 +30,6 @@ const CarouselView = Marionette.View.extend({
       centerMode: true,
       variableWidth: true,
     });
-    this.ui.secondCarousel.slick({
-      autoplay: true,
-      centerMode: true,
-      variableWidth: true,
-      rtl: true,
-    })
   }
 });
 
@@ -129,7 +124,7 @@ const RootView = Marionette.View.extend({
   
   onRender() {
     this.showChildView('nav', new NavView());
-    this.showChildView('main', new EventsView());
+    this.showChildView('main', new CarouselView());
   }
 })
 
