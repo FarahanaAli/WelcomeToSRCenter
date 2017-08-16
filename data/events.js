@@ -5,6 +5,7 @@ module.exports = [
   },
   {
     name: 'Gardening day',
+    image: 'http://www.homebase.co.uk/cmsresource/image/118078/landscape_ratio3x2/440/300/83e07e6e7930b687493cddb81bef27e2/mF/istock-000057793060-large.jpg',
   },
   {
     name: 'Chess Club',
@@ -12,6 +13,7 @@ module.exports = [
   {
     name: 'Mingle Day',
     video: true,
+    image: '',
   },
   {
     name: 'Mental Health Day',
@@ -28,7 +30,7 @@ module.exports = [
   },
   {
     name: 'Yoga Class',
-    video: true,
+    video: 'https://www.youtube.com/watch?v=m7zCDiiTBTk',
   },
   {
     name: 'Cool fun day',
@@ -41,6 +43,7 @@ module.exports = [
   },
   {
     name: 'Craft Day',
+    image: 'https://s-media-cache-ak0.pinimg.com/originals/dd/43/de/dd43deee4e24bf9e5cb1faa4c4f3bd81.jpg',
   },
   {
     name: 'Field Trip Day',
@@ -64,7 +67,7 @@ module.exports = [
     name: 'Cuture Day',
   },
   {
-    name: 'Flags Day',  
+    name: 'Yoga Day',  
   },
   {
     name: 'Flags Making Day ',
@@ -90,7 +93,8 @@ module.exports = [
     video: true,
   },
   { 
-    name: 'Garden Day',
+    name: 'Kids Day',
+    video: 'https://mail.google.com/mail/u/0/#inbox/15de6a8384b2cc91?projector=1',
    
   },
   

@@ -25,5 +25,9 @@ module.exports = {
     'https://3.bp.blogspot.com/-QABPtp3ZhAA/Vzoi3mM9KGI/AAAAAAAAIvk/hHsfE1poBVsRODV5DxGL2f4awKPqRpjkgCKgB/s1600/20160516_092709.jpg',
     'https://s-media-cache-ak0.pinimg.com/originals/ec/e5/fb/ece5fba4a6592f0c5a3ea5364619d420.jpg',
     'https://www.ywcagla.org/wp-content/uploads/2014/08/4607230-senior-man-using-computer.jpg',
+  
+  
+  
+  
   ],
 };

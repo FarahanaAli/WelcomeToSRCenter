@@ -121,9 +121,15 @@ border-right: 0;
 }
 
 .days li:first-child {
-border-left: 1px solid rgba(0,0,0,0.5);  
+border-left: 1px solid rgba(0,0,0,0.5); 
+background: #f2e68e; 
 }
-
+.days li:nth-child(4n){
+background: #00FFFF;
+}
+.days li:nth-child(3n){
+background:#FF69B4;
+}
 .days li:nth-child(7n) {
 border-right: 1px solid rgba(0,0,0,0.5);
 }
@@ -187,4 +193,8 @@ margin: auto;
 .carousels {
 /* (1040 - 450) / 2 */
 padding: 295px 0;
+}
+
+.event-image{
+max-width: 75px;
 }

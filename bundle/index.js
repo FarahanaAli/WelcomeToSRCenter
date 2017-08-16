@@ -52,6 +52,11 @@ const EventsView = Marionette.View.extend({
             `<a data-video="${events[index].video}" class="open-video-stream ${index === 17 ? 'live' : ''}">• ${index === 17 ? 'Watch live' : 'Watch'}</a>`
           );
         }
+        if (events[index].image) {
+          event.push(
+            `<img class="event-image" src="${events[index].image}"/>`
+          );
+        }
       }
       
       let number = index;
@@ -124,7 +129,7 @@ const RootView = Marionette.View.extend({
   
   onRender() {
     this.showChildView('nav', new NavView());
-    this.showChildView('main', new CarouselView());
+    this.showChildView('main', new EventsView());
   }
 })
 
