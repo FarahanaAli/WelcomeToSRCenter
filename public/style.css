@@ -1,3 +1,29 @@
+
+/*position content*/
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+
+/*overlay */
+.overlay{
+height: 100%;
+width: 0;
+position: fixed; 
+z-index: 1; 
+left: 0;
+top: 0;
+background-color: rgb(255,255,255) ;
+background-color:rgb(0,255,0);
+overflow-x: hidden; 
+transition: 0.5s; 
+}
+
+/* hovering */
 .overlay a:hover, .overlay a:focus {
     color:#00FF00;
 }
@@ -101,6 +127,7 @@ background: #eee;
 margin: auto;
 }
 
+
 .days:after {
 display: block;
 clear: both;
@@ -125,16 +152,3 @@ padding: 5px;
 background: #1abc9c;
 color: white !important;
 } 
-/*overlay */
-.overlay{
-height: 100%;
-width: 0;
-position: fixed; 
-z-index: 1; 
-left: 0;
-top: 0;
-background-color: rgb(255,255,255) ;
-background-color:rgb(0,255,0);
-overflow-x: hidden; 
-transition: 0.5s; 
-}

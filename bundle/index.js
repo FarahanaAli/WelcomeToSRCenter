@@ -13,7 +13,7 @@ const EventsView = Marionette.View.extend({
   onRender() {
     this.$('ul.days li').each((index, li) => {
       let event;
-      if (events[index]) event = events[index];
+      if (events[index]) event = [events[index]];
       else event = '';
 
       li.innerHTML = day({
@@ -30,7 +30,7 @@ const FoodMenuView = Marionette.View.extend({
   onRender() {
     this.$('ul.days li').each((index, li) => {
       let menuOptions;
-      if (menu[index]) menuOptions = `${menu[index].dinner}`;
+      if (menu[index]) menuOptions = [`L: ${menu[index].lunch}`, `D: ${menu[index].dinner}`];
       else menuOptions = '';
 
       li.innerHTML = day({

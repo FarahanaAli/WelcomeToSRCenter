@@ -1,25 +1,31 @@
 module.exports = [
   {
-    lunch: 'L: Sandwiches',
-    dinner: 'DPot roast',
+    breakfast: 'Pancakes',
+    lunch: 'Sandwiches',
+    dinner: 'Pot roast',
   },
   {
+    breakfast: 'Waffles',
     lunch: 'Pizza',
     dinner: 'Chicken and rice',
   },
   {
-    lunch: 'Mashed potatoes',
+    breakfast: 'Ceral',
+    lunch: ' Mashed potatoes',
     dinner: 'Spagetti',
   },
   {
+    breakfast: 'Yogurt',
     lunch: 'Tacos',
     dinner: 'Chicken fajitas',
   },
   {
-    lunch:'Burger',
+    breakfast: 'Fruit',
+    lunch: 'Burger',
     dinner: 'Braised ribs',
   },
   {
+    breakfast: ' '
     lunch: 'Sausage',
     dinner: 'Sushi',
   },
@@ -38,6 +44,10 @@ module.exports = [
   {
     lunch: 'Burgers',
     dinner: 'Mac and Cheese',
+  },
+  {
+    lunch: 'Jam and Bread',
+    dinner: 'Rice and Beans'
   },
   {
     lunch: ''

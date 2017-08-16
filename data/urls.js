@@ -5,6 +5,8 @@ module.exports = {
     '<iframe width="560" height="315" src="https://www.youtube.com/embed/kRy5kRB93zA" frameborder="0" allowfullscreen></iframe>',
   ],
   imageUrls: [
+    'http://imgur.com/a/Y2dDY',
+    'http://imgur.com/a/bkRJb',
     'http://imgur.com/a/QYssX',
     'http://imgur.com/a/9B0d0',
     'https://goo.gl/images/bnLIuU',

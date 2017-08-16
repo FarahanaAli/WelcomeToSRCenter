@@ -1,6 +1,8 @@
 <div class="day-frame">
   <span class="day-text">
-    {{text}}
+    {{#each text}}
+      {{this}}<br/>
+    {{/each}}
   </span>
   <span class="day-number">
     {{number}}
