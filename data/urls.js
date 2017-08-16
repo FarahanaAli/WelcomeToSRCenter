@@ -9,6 +9,8 @@ module.exports = {
     'http://imgur.com/a/bkRJb',
     'http://imgur.com/a/QYssX',
     'http://imgur.com/a/9B0d0',
+    'http://imgur.com/a/qBznG',
+    'http://imgur.com/a/a0ar0',
     'https://goo.gl/images/bnLIuU',
     'http://imgur.com/a/6ilLu',
     'http://imgur.com/a/ZxSxg',

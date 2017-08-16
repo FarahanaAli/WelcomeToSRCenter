@@ -77,3 +77,13 @@ const App = Marionette.Application.extend({
 const app = new App();
 
 document.addEventListener('DOMContentLoaded', () => app.start());
+
+
+
+
+
+
+
+
+
+
