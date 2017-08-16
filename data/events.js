@@ -29,6 +29,7 @@ module.exports = [
   },
   {
     name: 'Spa Day',  
+    image: 'https://www.amtamassage.org/uploads/cms/images/aging-massage-89076266.jpg/image-full;size$470,314.ImageHandler',
   },
   {
     name: 'Yoga Class',
@@ -84,6 +85,7 @@ module.exports = [
   },
   {
     name: 'Pizza Day',
+    image:'https://image1.masterfile.com/getImage/NjI5LTAxMTEwODY3ZW4uMDAwMDAwMDA=AKzbC7/629-01110867en_Masterfile.jpg',
   },
   {
     name: 'Painting Day',

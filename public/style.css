@@ -111,8 +111,30 @@ width: calc(100% - 10px);
 color: rgba(0,0,0,0.8);
 }
 
+nav {
+width: 900px;
+margin: auto;
+background: #fff;
+border-radius: 0 0 4px 4px;
+border: 1px solid rgba(0,0,0,0.8);
+}
+
+nav:after {
+content: '';
+clear: both;
+display: block;
+}
+
 .nav-link {
-padding: 5px 2px;
+width: 33.333%;
+float: left;
+height: 150px;
+text-align: center;
+line-height: 110px;
+background: blue;
+border: 20px solid #fff;
+box-sizing: border-box;
+}
 }
 
 .day-frame {
