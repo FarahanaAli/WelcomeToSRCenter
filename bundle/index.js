@@ -21,8 +21,11 @@ const CarouselView = Marionette.View.extend({
   },
   
   onAttach() {
-    console.log(this.ui.carousel);
-    this.ui.carousel.slick();
+    this.ui.carousel.slick({
+      autoplay: true,
+      centerMode: true,
+      variableWidth: true,
+    });
   }
 });
 
