@@ -9,36 +9,6 @@ right: 45px;
 font-size: 60px;
 }
 
-
-/*position content of da overlay*/
-.overlay-content {
-position: relative;
-top: 25%; 
-width: 100%; 
-text-align: center; 
-margin-top: 30px; 
-}
-
-
-/*overlay */
-.overlay{
-height: 100%;
-width: 0;
-position: fixed; 
-z-index: 1; 
-left: 0;
-top: 0;
-background-color: rgb(255,255,255) ;
-background-color:rgb(0,255,0);
-overflow-x: hidden; 
-transition: 0.5s; 
-}
-
-/* when da overlay hovers */
-.overlay a:hover, .overlay a:focus {
-    color:#00FF00;
-}
-
 #root {
 margin: auto;
 max-width: 900px;
@@ -165,8 +135,18 @@ color: white !important;
 } 
 
 img {
-max-height: 250px;
+max-height: 215px;
 max-width: 100%;
+}
+
+.carousel-1, .carousel-2 {
+max-width: 850px;
+margin: auto;
+}
+
+.carousels {
+/* (1000 - 450) / 2 */
+padding: 275px 0;
 }
 
 .column{
@@ -176,4 +156,3 @@ max-width: 100%;
 
 
 
-}

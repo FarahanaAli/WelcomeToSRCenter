@@ -7,7 +7,7 @@ const carouselTpl = require('./carousel.html');
 const day = require('./day.html');
 const events = require('../data/events');
 const mainTpl = require('./main.html');
-const menu = require('../data/menu');
+const menu = []
 const navTpl = require('./nav.html');
 const urls = require('../data/urls');
 
